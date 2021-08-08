@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <div class="game-data">
+        <h5 class="feedback-label"></h5>
+        <div class="score-data">
+          <h5 class="score-label">Score:<span class="score"> 0</span></h5>
+          <h5 class="score-label">High Score:<span class="high-score"> 0</span></h5>
+        </div>
+        <div class="lives-data">
+          <ion-icon class="heart" name="heart"></ion-icon>
+          <span class="lives-count"> 5</span>
+        </div>
+        <div class="hidden-number-wrapper">
+          <div class="hidden-number-wrapper-inner">
+            <h5 class="hidden-number-label">?</h5>
+          </div>
+        </div>
+      </div>
+      <div class="game-controls">
+        <input type="text" class="guess" placeholder="Enter your guess">
+        <button class="btn btn-blue play">Play</button>
+        <button class="btn btn-orange continue" disabled>Continue</button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <h5 class="game-over">Game over</h5>
+      <p>Would you like to continue?</p>
+      <button class="btn btn-blue retry">Retry</button>
+    </div>
+    <!-- Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./main.js" async defer></script>
+  </body>
+</html>
